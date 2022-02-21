@@ -1,12 +1,8 @@
 import './style.css'
-import Worker from './worker?worker'
+import { o } from './Component'
 
-const worker = new Worker();
+console.log(o);
 
-worker.onmessage = async (e) => {
-  console.log(e);
-  
-}
 const app = document.querySelector<HTMLDivElement>('#app')!
 
 app.innerHTML = `
