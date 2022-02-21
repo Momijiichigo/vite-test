@@ -1,0 +1,1 @@
+Object.defineProperties(Element.prototype,{_vf:{value:{}},watch:{value:function(v,t){let e=this._vf[v];e?(e.push(t),e.value!==void 0&&t(e.value)):this._vf[v]=[t]}}});Object.defineProperty(EventTarget.prototype,"on",{value:EventTarget.prototype.addEventListener});
