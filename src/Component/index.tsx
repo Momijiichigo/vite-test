@@ -1,5 +1,5 @@
 import Worker from './worker?worker'
-
+import url from './another.ts?url'
 const OFF_SCREEN_AVAILABLE = import.meta.env.PROD && 'transferControlToOffscreen' in HTMLCanvasElement.prototype
 
 let unko
@@ -18,3 +18,4 @@ if(OFF_SCREEN_AVAILABLE){
 
 
 export const o = unko
+console.log(url)
