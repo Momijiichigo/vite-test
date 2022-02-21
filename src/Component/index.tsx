@@ -1,6 +1,8 @@
 import Worker from './worker?worker'
 
 const OFF_SCREEN_AVAILABLE = import.meta.env.PROD && 'transferControlToOffscreen' in HTMLCanvasElement.prototype
+
+let unko
 if(OFF_SCREEN_AVAILABLE){
   const worker = new Worker();
   
@@ -8,8 +10,11 @@ if(OFF_SCREEN_AVAILABLE){
     console.log(e);
     
   }
+  unko = 'aaaa'
+} else {
+  unko = 'bbbb'
 }
 
 
 
-export const o = 3
+export const o = unko
